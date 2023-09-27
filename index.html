@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hidden icon</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <svg
+      class="gb_i"
+      focusable="false"
+      viewBox="0 0 24 24"
+      onclick="toggleHidden()"
+    >
+      <path
+        d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+      ></path>
+    </svg>
+    <div class="hidden" id="hiddenDiv">
+      <!-- <div class="hidden1">
+        <div class class="drive">
+        <a href="#">
+          <span class="icon"><i class="fa-brands fa-google-drive" style="color: #551A8B;"></i></span>
+          <span class="spanned">Google Drive</span></a>
+        </div>
+        <div class class="gg-play">
+            <a href="#">
+              <span class="icon"><i class="fa-brands fa-google-play" style="color: #551A8B;"></i></span>
+              <span class="spanned">Google Play</span></a>
+        </div>
+        <div class="gg-pay">
+            <a href="#">
+              <span class="icon"><i class="fa-brands fa-google-pay" style="color: #551A8B;"></i></span>
+              <span class="spanned">Google Pay</span></a>
+        </div>
+    </div> -->
+      <div class="hidden1">
+        <div class="gg-drive">
+          <a href="login.html"
+            ><i
+              class="fa-regular fa-right-to-bracket"
+              style="color: #551a8b"
+            ></i
+            ><span class="spanned">Login Here</span></a
+          >
+        </div>
+        <div class="gg-play">
+          <a href="#"
+            ><i class="fa-brands fa-google-play" style="color: #551a8b"></i
+            ><span class="spanned">Google Play</span></a
+          >
+        </div>
+        <div class="gg-pay">
+          <a href="#"
+            ><i class="fa-brands fa-google-pay" style="color: #551a8b"></i
+            ><span class="spanned">Google Pay</span></a
+          >
+        </div>
+      </div>
+
+      <div class="hidden2">
+        <div class="gg-drive">
+          <a href="#"
+            ><i class="fa-brands fa-google-drive" style="color: #551a8b"></i
+            ><span class="spanned">Google Drive</span></a
+          >
+        </div>
+        <div class="gg-play">
+          <a href="#"
+            ><i class="fa-brands fa-google-play" style="color: #551a8b"></i
+            ><span class="spanned">Google Play</span></a
+          >
+        </div>
+        <div class="gg-pay">
+          <a href="#"
+            ><i class="fa-brands fa-google-pay" style="color: #551a8b"></i
+            ><span class="spanned">Google Pay</span></a
+          >
+        </div>
+      </div>
+
+      <div class="hidden3">
+        <div class="gg-drive">
+          <a href="#"
+            ><i class="fa-brands fa-google-drive" style="color: #551a8b"></i
+            ><span class="spanned">Google Drive</span></a
+          >
+        </div>
+        <div class="gg-play">
+          <a href="#"
+            ><i class="fa-brands fa-google-play" style="color: #551a8b"></i
+            ><span class="spanned">Google Play</span></a
+          >
+        </div>
+        <div class="gg-pay">
+          <a href="#"
+            ><i class="fa-brands fa-google-pay" style="color: #551a8b"></i
+            ><span class="spanned">Google Pay</span></a
+          >
+        </div>
+      </div>
+
+      <div class="hidden4">
+        <div class="gg-drive">
+          <a href="#"
+            ><i class="fa-brands fa-google-drive" style="color: #551a8b"></i
+            ><span class="spanned">Google Drive</span></a
+          >
+        </div>
+        <div class="gg-play">
+          <a href="#"
+            ><i class="fa-brands fa-google-play" style="color: #551a8b"></i
+            ><span class="spanned">Google Play</span></a
+          >
+        </div>
+        <div class="gg-pay">
+          <a href="#"
+            ><i class="fa-brands fa-google-pay" style="color: #551a8b"></i
+            ><span class="spanned">Google Pay</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function toggleHidden() {
+    var hiddenDiv = document.getElementById("hiddenDiv");
+    hiddenDiv.style.display =
+      hiddenDiv.style.display === "none" || hiddenDiv.style.display === ""
+        ? "block"
+        : "none";
+  }
+</script>
